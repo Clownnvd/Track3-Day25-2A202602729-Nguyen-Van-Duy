@@ -1,0 +1,195 @@
+{
+  "retry_budget": {
+    "budget_on:G2_overload_storm": {
+      "availability": 0.9987,
+      "latency_p95_s": 19.049,
+      "amplification": 1.383,
+      "retry_ratio": 0.058,
+      "recovery_s": 0.0,
+      "give_up_reasons": {
+        "deadline": 3
+      },
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.356
+    },
+    "budget_on:G3_brownout": {
+      "availability": 1.0,
+      "latency_p95_s": 4.534,
+      "amplification": 1.136,
+      "retry_ratio": 0.068,
+      "recovery_s": 0.0,
+      "give_up_reasons": {},
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.271
+    },
+    "budget_off:G2_overload_storm": {
+      "availability": 0.9606,
+      "latency_p95_s": 22.144,
+      "amplification": 1.677,
+      "retry_ratio": 0.503,
+      "recovery_s": 32.0,
+      "give_up_reasons": {
+        "deadline": 93
+      },
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.481
+    },
+    "budget_off:G3_brownout": {
+      "availability": 1.0,
+      "latency_p95_s": 4.777,
+      "amplification": 1.163,
+      "retry_ratio": 0.162,
+      "recovery_s": 0.0,
+      "give_up_reasons": {},
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.325
+    }
+  },
+  "attempt_timeout": {
+    "normal:G4_slow_region": {
+      "availability": 1.0,
+      "latency_p95_s": 5.604,
+      "amplification": 1.016,
+      "retry_ratio": 0.002,
+      "recovery_s": 0.0,
+      "give_up_reasons": {},
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.076
+    },
+    "normal:G6_provider_outage": {
+      "availability": 1.0,
+      "latency_p95_s": 6.016,
+      "amplification": 1.056,
+      "retry_ratio": 0.019,
+      "recovery_s": 0.0,
+      "give_up_reasons": {},
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.219
+    },
+    "30s:G4_slow_region": {
+      "availability": 1.0,
+      "latency_p95_s": 5.683,
+      "amplification": 1.014,
+      "retry_ratio": 0.002,
+      "recovery_s": 0.0,
+      "give_up_reasons": {},
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.077
+    },
+    "30s:G6_provider_outage": {
+      "availability": 0.9488,
+      "latency_p95_s": 5.306,
+      "amplification": 1.032,
+      "retry_ratio": 0.014,
+      "recovery_s": 0.0,
+      "give_up_reasons": {
+        "deadline": 109,
+        "no_provider_available": 13
+      },
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.235
+    }
+  },
+  "tool_capability": {
+    "filtered": {
+      "availability": 1.0,
+      "latency_p95_s": 6.016,
+      "amplification": 1.056,
+      "retry_ratio": 0.019,
+      "recovery_s": 0.0,
+      "give_up_reasons": {},
+      "incompatible_routes": 0,
+      "cost_per_good_turn": 2.219
+    },
+    "unfiltered": {
+      "availability": 0.8918,
+      "latency_p95_s": 5.725,
+      "amplification": 1.045,
+      "retry_ratio": 0.006,
+      "recovery_s": 0.0,
+      "give_up_reasons": {
+        "incompatible_model_output": 258
+      },
+      "incompatible_routes": 258,
+      "cost_per_good_turn": 2.275
+    }
+  },
+  "cache_threshold": {
+    "threshold_0.80": {
+      "availability": 0.8519,
+      "faq_availability": 0.8663,
+      "cache_hit_ratio": 0.687,
+      "wrong_answers": 165,
+      "wrong_answers_by_reason": {
+        "other_question": 165
+      },
+      "outdated_answers": 8,
+      "stale_served": 139,
+      "cost_per_good_turn": 0.953
+    },
+    "threshold_0.92": {
+      "availability": 0.912,
+      "faq_availability": 0.9645,
+      "cache_hit_ratio": 0.681,
+      "wrong_answers": 0,
+      "wrong_answers_by_reason": {},
+      "outdated_answers": 13,
+      "stale_served": 143,
+      "cost_per_good_turn": 0.896
+    },
+    "threshold_0.97": {
+      "availability": 0.9117,
+      "faq_availability": 0.964,
+      "cache_hit_ratio": 0.623,
+      "wrong_answers": 0,
+      "wrong_answers_by_reason": {},
+      "outdated_answers": 17,
+      "stale_served": 155,
+      "cost_per_good_turn": 0.935
+    }
+  },
+  "cache_ttl": {
+    "ttl_30": {
+      "availability": 0.912,
+      "faq_availability": 0.964,
+      "cache_hit_ratio": 0.591,
+      "wrong_answers": 0,
+      "wrong_answers_by_reason": {},
+      "outdated_answers": 2,
+      "stale_served": 191,
+      "cost_per_good_turn": 0.956
+    },
+    "ttl_60": {
+      "availability": 0.912,
+      "faq_availability": 0.964,
+      "cache_hit_ratio": 0.652,
+      "wrong_answers": 0,
+      "wrong_answers_by_reason": {},
+      "outdated_answers": 3,
+      "stale_served": 156,
+      "cost_per_good_turn": 0.916
+    },
+    "ttl_300": {
+      "availability": 0.9113,
+      "faq_availability": 0.964,
+      "cache_hit_ratio": 0.731,
+      "wrong_answers": 0,
+      "wrong_answers_by_reason": {},
+      "outdated_answers": 95,
+      "stale_served": 69,
+      "cost_per_good_turn": 0.863
+    }
+  },
+  "cache_stale": {
+    "stale_0": {
+      "availability": 0.8611,
+      "faq_availability": 0.8814,
+      "cache_hit_ratio": 0.598,
+      "wrong_answers": 0,
+      "wrong_answers_by_reason": {},
+      "outdated_answers": 13,
+      "stale_served": 0,
+      "cost_per_good_turn": 0.949
+    }
+  }
+}
